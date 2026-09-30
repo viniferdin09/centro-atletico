@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campo Tático</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <span>⚽</span>
+
+        <div>
+            <strong>Centro Atlético</strong>
+            <small>Santacruzense</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="jogador.html">Jogador</a>
+        <a href="professor.html">Professor</a>
+        <a href="tatica.html">Tática</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="tactical-page">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <span class="tag">COMISSÃO TÉCNICA</span>
+
+            <h1>Campo tático</h1>
+
+            <p>
+                Arraste os jogadores para montar sua escalação.
+            </p>
+
+        </div>
+
+        <button class="btn" onclick="salvarEscalacao()">
+            💾 Salvar escalação
+        </button>
+
+    </div>
+
+
+    <div class="tactical-layout">
+
+
+        <div class="players-panel">
+
+            <h2>Jogadores</h2>
+
+            <p>Arraste para o campo</p>
+
+            <div
+                class="drag-player"
+                draggable="true"
+                ondragstart="drag(event)"
+                id="p1">
+
+                🧤 João
+                <small>Goleiro</small>
+
+            </div>
+
+
+            <div
+                class="drag-player"
+                draggable="true"
+                ondragstart="drag(event)"
+                id="p2">
+
+                ⚽ Gabriel
+                <small>Zagueiro</small>
+
+            </div>
+
+
+            <div
+                class="drag-player"
+                draggable="true"
+                ondragstart="drag(event)"
+                id="p3">
+
+                ⚽ Lucas
+                <small>Volante</small>
+
+            </div>
+
+
+            <div
+                class="drag-player"
+                draggable="true"
+                ondragstart="drag(event)"
+                id="p4">
+
+                ⚽ Vinicius
+                <small>Meia</small>
+
+            </div>
+
+
+            <div
+                class="drag-player"
+                draggable="true"
+                ondragstart="drag(event)"
+                id="p5">
+
+                ⚽ Pedro
+                <small>Atacante</small>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="football-field"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)">
+
+            <div class="field-line center-line"></div>
+
+            <div class="field-circle"></div>
+
+            <div class="goal top-goal"></div>
+
+            <div class="goal bottom-goal"></div>
+
+            <div class="position" id="pos1">
+                GOL
+            </div>
+
+            <div class="position" id="pos2">
+                ZAG
+            </div>
+
+            <div class="position" id="pos3">
+                VOL
+            </div>
+
+            <div class="position" id="pos4">
+                MEI
+            </div>
+
+            <div class="position" id="pos5">
+                ATA
+            </div>
+
+        </div>
+
+
+        <div class="bench">
+
+            <h2>Banco</h2>
+
+            <p>Reservas</p>
+
+            <div class="bench-player">⚽ Matheus</div>
+
+            <div class="bench-player">⚽ Rafael</div>
+
+            <div class="bench-player">⚽ Henrique</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
